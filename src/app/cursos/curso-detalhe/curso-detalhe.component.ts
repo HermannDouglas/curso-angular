@@ -11,9 +11,14 @@ export class CursoDetalheComponent implements OnInit {
 
   cursos: string[] = ['Java', 'Ext JS', 'Angular'];
 
-  constructor(
+  constructor() {
     this.nomePortal = 'http://loiane.training';
-  ) { }
+
+    for (let i=0; i<this.nomePortal.length; i++) {
+      let curso = this.nomePortal[i];
+    }
+
+  }
 
   ngOnInit(): void {
   }
