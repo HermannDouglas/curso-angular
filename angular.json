@@ -5,7 +5,11 @@
   "projects": {
     "data-binding": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -98,7 +102,5 @@
       }
     }
   },
-  "cli": {
-    "analytics": "ccdd3c7c-a0e7-4939-9f7c-379b87f6d043"
-  }
+  "defaultProject": "data-binding"
 }
